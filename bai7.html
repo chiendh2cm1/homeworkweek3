@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--4.	Tìm giá trị lớn nhất của mỗi cột.-->
+<script>
+    let numbers = [
+        [5, 12, 17, 9, 3],
+        [13, 4, 8, 14, 1],
+        [9, 6, 3, 7, 22]
+    ];
+    let max = numbers[0][0];
+    let rowLenth = numbers[0].length;
+    for (let i=0; i< rowLenth; i++) {
+        for (let j = 0; j < numbers.length; j++) {
+            if (numbers[j][i]> max) {
+                max = numbers[j][i]
+            }
+        }
+        document.write( "Giá trị lớn nhất của " + (i +1 ) + " là: " +  max);
+        max = 0;
+        document.write("<br/>")
+    }
+</script>
+</body>
+</html>

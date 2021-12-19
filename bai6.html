@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--3.	Tính tổng các phần tử của 1 cột và hiển thị tổng của từng cột-->
+<script>
+    let numbers = [
+        [5, 12, 17, 9, 3],
+        [13, 4, 8, 14, 1],
+        [9, 6, 3, 7, 22]
+    ];
+    let sumColumn = 0;
+    let rowLenth = numbers[0].length;
+    for (let i=0; i< rowLenth; i++) {
+        for (let j = 0; j < numbers.length; j++) {
+            sumColumn += numbers[j][i];
+        }
+        document.write( "Tổng các phần tử cột " + (i +1 ) + " là: " +  sumColumn);
+        sumColumn = 0;
+        document.write("<br/>")
+    }
+</script>
+</body>
+</html>

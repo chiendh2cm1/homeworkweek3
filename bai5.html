@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--2.	Tính tổng các phần tử trong 1 hàng và hiển thị tổng của từng hàng-->
+<script>
+    let numbers = [
+        [5, 12, 17, 9, 3],
+        [13, 4, 8, 14, 1],
+        [9, 6, 3, 7, 22]
+    ];
+    sumRow = 0;
+    for (let i=0; i< numbers.length; i++) {
+        for (let j = 0; j < numbers[i].length; j++) {
+            sumRow += numbers[i][j];
+        }
+        document.write( "Tổng các phần tử hàng " + (i + 1) + " là: " +  sumRow);
+        sumRow=0;
+        document.write("<br/>")
+    }
+</script>
+</body>
+</html>

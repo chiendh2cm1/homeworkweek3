@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--3.	Nhập vào 1 số và đếm xem số đó xuất hiện bao nhiêu lần trong mảng.-->
+<script>
+    arr = [3, 5, 7, 9, 11, 21, 13, 15, 17, 21];
+    let number = parseInt(prompt("input number: "));
+    let arrLength = arr.length;
+    let count = 0;
+    let flag = false;
+    for (let i = 0; i < arrLength; i++) {
+        if (number === arr[i]) {
+            count += 1
+            flag = true;
+        }
+    }
+    if (flag ===true) {
+        alert(number + " xuất hiện " + count + " lần trong mảng")
+    }else {
+        alert("không có phần tử này trong mảng")
+    }
+</script>
+</body>
+</html>
